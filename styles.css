@@ -1,0 +1,35 @@
+body {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 30px;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+h3 {
+    margin-top: 32px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+@media print {
+    body {
+        margin: 0;
+        max-width: none;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+}
