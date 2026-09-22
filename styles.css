@@ -29,7 +29,17 @@ h3 {
         color: black;
         text-decoration: none;
     }
-    a[href]::after {
+    .github::after {
         content: " (" attr(href) ")";
+    }
+    .project-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+    .project-links li:not(:last-child)::after {
+    content: " |";
+    margin-left: 15px;
     }
 }
