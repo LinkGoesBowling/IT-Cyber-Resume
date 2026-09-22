@@ -43,6 +43,6 @@ h3 {
     margin-left: 15px;
     }
     .project-links::after{
-        content: " available on GitHub";
+        content: "available on GitHub";
     }
 }
